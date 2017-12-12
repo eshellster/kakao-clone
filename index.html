@@ -15,6 +15,7 @@
         height: 400%;
         background-color: red;
       }
+      /* Position Fixed
       #boxOne{
         height: 300px;
         width: 300px;
@@ -28,18 +29,35 @@
         position: fixed;
         top: 500px;
         margin: auto;
-
-
+      } */
+      .abs-box{
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+        left: 100px
+      }
+      .abs-child{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 20px;
+        top: 20px;
       }
 
     </style>
   </head>
   <body>
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
+    <!-- Position fixed
     <div id="boxOne">
       <div class="inside-box">  </div>
     </div>
     <div id="boxTwo">
       <div class="inside-box">  </div>
-    </div>
+    </div> -->
   </body>
 </html>
