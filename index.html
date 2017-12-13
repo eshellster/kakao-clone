@@ -4,60 +4,60 @@
     <meta charset="utf-8">
     <meta name="author" content="eshell">
     <meta name="dexcription" content="Welcome to my Kakao Clone">
-    <title>Mixin' CSS and HTML</title>
-    <style media="screen">
-      body, html{
-        height: 100%;
-        margin: 0;
+    <title>Flex</title>
+    <style>
+      *{
+        border: 1px solid black;
+      }
+      html, body{
+        background-color: white;
         padding: 0;
+        margin: 0;
       }
       body{
-        height: 400%;
-        background-color: red;
+        background-color: darkgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
       }
-      /* Position Fixed
-      #boxOne{
-        height: 300px;
-        width: 300px;
-        background-color: yellow;
-        position: static;
-      }
-      #boxTwo{
-        height: 1%;
+      .row{
         width: 100%;
-        background-color: green;
-        position: fixed;
-        top: 500px;
-        margin: auto;
-      } */
-      .abs-box{
-        width: 400px;
-        height: 400px;
-        background-color: yellow;
-        position: relative;
-        left: 100px
       }
-      .abs-child{
+      .father{
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-end;
+        height: 100%;
+        flex-direction: row;
+      }
+      .box{
         width: 100px;
         height: 100px;
-        background-color: green;
-        position: absolute;
-        right: 20px;
-        top: 20px;
+        color: white;
+        background-color: forestgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-
     </style>
-  </head>
+  </head> 
   <body>
-    <div class="abs-box">
-        <div class="abs-child"></div>
+    <div class="father">
+     <div class="row"></div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+<!--
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+-->
     </div>
-    <!-- Position fixed
-    <div id="boxOne">
-      <div class="inside-box">  </div>
     </div>
-    <div id="boxTwo">
-      <div class="inside-box">  </div>
-    </div> -->
   </body>
 </html>
