@@ -15,21 +15,23 @@
         margin: 0;
       }
       body{
-        background-color: darkgrey;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-      }
-      .row{
+        position: absolute;
         width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center; /*centers items on the line (the x-axis by default)*/
+        align-items: center; /*centers items on the cross-axis (y by default)*/
       }
+      
       .father{
         display: flex;
-        justify-content:flex-start;
-        align-items: flex-end;
+        width: 100%;
         height: 100%;
+        justify-content:center;
+        align-items:center;
         flex-direction: row;
+        flex-wrap: nowrap;
+        
       }
       .box{
         width: 100px;
@@ -39,25 +41,34 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 10px;
+        
       }
+      #large{
+        height: 300px;
+        flex-grow: 1;
+      }
+      .child{
+        width: 50px;
+        height: 50px;
+      }
+  
     </style>
   </head> 
   <body>
     <div class="father">
-     <div class="row"></div>
-      <div class="box">1</div>
+      <div class="box">
+         <div class="child">1</div>
+      </div>
       <div class="box">2</div>
-      <div class="box">3</div>
+      <div id="large" class="box">3</div>
       <div class="box">4</div>
-<!--
       <div class="box">5</div>
       <div class="box">6</div>
       <div class="box">7</div>
       <div class="box">8</div>
       <div class="box">9</div>
       <div class="box">10</div>
--->
-    </div>
     </div>
   </body>
 </html>

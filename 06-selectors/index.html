@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=deviec-width, initial-scale=1.0">
+  <title>selectors</title>
+  <style>
+    *{
+      border: 1px solid orange;
+    }
+    input[type="password"]{
+      background-color: skyblue;
+    }
+    .box{
+      height: 50px;
+      background-color: forestgreen
+    }
+    .box:nth-child(3n+2){
+      background-color: hotpink
+    }
+    
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box">
+      <input type="password">
+      <input type="submit" class="submit">
+    </div>
+  </div>
+</body>
+</html>
