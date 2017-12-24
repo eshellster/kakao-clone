@@ -25,9 +25,12 @@
 }
 
 .header__column{
-  width: 33%
+  width: 33%;
 }
-
+.header__column a i{
+  text-decoration: none;
+  color:white;
+}
 .top-header .header__column:last-child{
   text-align: right;
 }
