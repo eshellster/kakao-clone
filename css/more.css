@@ -82,8 +82,16 @@
 }
 
 
-.more__options.more__options-other{
-  justify-content: flex-start;
+.more__options-other{
+  padding: 20px 0;
+  display: flex;
+  border-bottom: 8px solid #F7F7F7;
+}
+
+.more__options-other .more__option{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
 }
 .more__options-other .more__option img{
   height: 60px;
