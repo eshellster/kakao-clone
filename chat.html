@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Chat</title>
 </head>
-<body>
-  <header class="top-header">
+<body class="chat-body">
+  <header class="top-header chat-header">
     <div class="header__top">
       <div class="header__column">
         <i class="fa fa-fighter-jet" ></i>
@@ -24,7 +24,7 @@
         <span class="header__battery">100% <i class="fa fa-battery-full"></i></span>
       </div>
     </div>
-    <div class="header__bottom">
+    <div class="header__bottom header__bottom-chat">
       <div class="header__column">
         <a href="chats.html">
           <i class="fa fa-angle-left fa-lg"></i>
@@ -41,15 +41,16 @@
   </header>
   <main class="chat">
     <div class="date-divider">
-      <span class="date-divider-text"></span>
+      <hr class="date-divider-line">
+      <span class="date-divider-text">Wendnesday, August 2, 2017</span>
     </div>
-    <div class="chat-message">
+    <div class="chat-message chat-message-from-me">
       <span class="chat-message-time">17:55</span>
       <span class="chat-message-body">
         Hello!! This is a test message.
       </span>
     </div>
-    <div class="chat-message">
+    <div class="chat-message chat-message-to-me">
       <img src="images/p5.png" class="chat-message-avatar">
       <div class="chat-message-center">
         <h3 class="chat-maessage-username">Lynn</h3>
@@ -61,10 +62,10 @@
     </div>
   </main>
   <div class="type-message">
-    <i class="fa fa-plus fa-lg"></i>
+    <i class="fa fa-plus fa-lg type-message__add"></i>
     <div class="type-message__input">
       <input type="text">
-      <i class="fa fa-smile-o"></i>
+      <i class="fa fa-smile-o message-input__emoticon"></i>
       <span class="record-message">
         <i class="fa fa-microphone fa-lg"></i>
       </span>

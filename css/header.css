@@ -5,6 +5,7 @@
   padding: 5px 10px 15px 10px;
   position: fixed;
   width: 100%;
+  height: 65px;
   top: 0;
   z-index: 2;
 }
@@ -12,11 +13,10 @@
 .top-header .header__bottom{
   display: flex;
   justify-content: space-between;
-
 }
 
 .top-header .header__top{
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 12px;
 }
 
@@ -37,10 +37,12 @@
 }
 .top-header .header__column:last-child{
   text-align: right;
+  align-self: center;
 }
 
 .top-header .header__column:nth-child(2){
   text-align: center;
+  align-self: center;
 }
 
 .top-header .header__number{
